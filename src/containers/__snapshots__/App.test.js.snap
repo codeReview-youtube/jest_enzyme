@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match default snapshot 1`] = `
+<div
+  className="app"
+>
+  <InputField
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value=""
+  />
+  <Items
+    items={Array []}
+    onClick={[Function]}
+    onDelete={[Function]}
+    onEdit={[Function]}
+  />
+</div>
+`;

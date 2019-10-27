@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Items Component should match default snapshot 1`] = `
+<div
+  className="list"
+>
+  <Item
+    item={
+      Object {
+        "completed": false,
+        "id": 1,
+        "title": "first Todo",
+      }
+    }
+    key="1-0"
+    onClick={[Function]}
+    onDelete={[Function]}
+    onEdit={[Function]}
+  />
+</div>
+`;

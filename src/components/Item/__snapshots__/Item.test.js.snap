@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Component should match default snapshot 1`] = `
+<div
+  className="item"
+  style={
+    Object {
+      "backgroundColor": "#393B40",
+    }
+  }
+>
+  <div
+    className="todo"
+    onClick={[MockFunction]}
+  >
+    new Todo
+  </div>
+  <div
+    className="actions"
+  >
+    <div
+      className="check"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "backgroundColor": "#393B40",
+        }
+      }
+    >
+      Check
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Item Component should match with item completed 1`] = `
+<div
+  className="item"
+  style={
+    Object {
+      "backgroundColor": "orange",
+    }
+  }
+>
+  <div
+    className="todo"
+    onClick={[MockFunction]}
+  >
+    new Todo
+  </div>
+  <div
+    className="actions"
+  >
+    <div
+      className="check"
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+    >
+      Done
+    </div>
+    <div
+      className="delete"
+      onClick={[MockFunction]}
+    >
+      delete
+    </div>
+  </div>
+</div>
+`;

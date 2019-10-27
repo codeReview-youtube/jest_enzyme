@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Items, InputField } from '../components';
+import fetch from 'node-fetch';
 
 export default class App extends Component {
-  state = {
-    todos: [],
-    todo: '',
-    id: null
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      todos: [],
+      todo: '',
+      id: null
+    };
+  }
 
   componentDidMount() {
     this.fetchTodos();
@@ -46,6 +50,8 @@ export default class App extends Component {
           ]
         }));
       }
+    } else {
+      return null;
     }
 
     this.clear();
@@ -91,7 +97,7 @@ export default class App extends Component {
    * fetchTodos
    */
   fetchTodos() {
-    fetch('https://jsonplaceholder.typicode.com/todos')
+    return fetch('https://jsonplaceholder.typicode.com/todos')
       .then(rs => rs.json())
       .then(
         todos =>
@@ -102,6 +108,7 @@ export default class App extends Component {
           })
       );
   }
+
   render() {
     const { todos, todo } = this.state;
     return (

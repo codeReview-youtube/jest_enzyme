@@ -17,6 +17,7 @@ const InputField = ({ onChange, value, onSubmit }) => {
         value={value}
         type='text'
         className='input'
+        placeholder='Add new ...'
       />
     </form>
   );

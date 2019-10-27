@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField Component should match default snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    className="input"
+    onChange={[Function]}
+    placeholder="Add new ..."
+    type="text"
+    value="todo"
+  />
+</form>
+`;
